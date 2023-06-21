@@ -1,0 +1,45 @@
+//EPISOD 3
+
+git clone 'The link of the repositry' --> clone the repositry into the specified address(link the repo to this address)
+//EPISOD 4
+
+git status  --> display the status of the files of the specified location
+git add file --> add the file to the 'Staging area'  (You can add more than one file in the same line)
+git add *  --> adds all the files in the specified folder
+git rest head file --> remove a file from the 'Staging area' & get it back to the 'working directory'
+git commit -m "a discription of what you have done"  --> move the file to the 'Local Repo'
+//EPISOD 5
+
+git branch  --> display the branch you are working on
+git remote -v  -->display the remote name
+git push  remote_name  branch_name   -->move your file from the local repo to the remote repo
+//EPISOD 6
+
+git pull remote_ name  --> add all the new files that are on the remote repo to your local repo
+//EPISOD 7
+
+git config -l  --> will display the configuration list
+git help config  --> will display the full configuration list
+git  config --global user.email  --> will display the your user.email
+git  config --global user.name "the name of the user"  --> will set the name of the users
+git config --global --unset user.name  --> will delete the value of user.name 
+//EPISOD 8
+		/*Creating a key*/
+step one--> ssh-keygen -t rsa -b 4096 -C "the email"
+step two--> create the key password two times
+step three--> cat ~/'the name of the key file'
+step four--> copy the content of the file , go to git_hub , open the settings , choose 'SSH and GPG keys' , choose 'New SSH key' , past the content of the
+	     key and give it a title
+step five--> chek your key using this command  'ssh -T git@github.com' , then enter the key password
+//EPISOD 9
+		"Creating a repositry inside the command line"
+
+git init --> initialize an empty repositry in the determined location
+git add file --> add the file to the staging area
+git push commit -m "discription"  --> add the file to the local repo
+create a new repo on github
+git remote add origin git@github.com:aboantar852003@gmail.com/name_of_the_project.git(this is the 6th line in the repo page)
+git push -u remote_name branch_name  --> add the files to the remote repositry(this is the 7th line in the repo page)
+//EPISOD 10
+		"Pull Request"
+watch the full episod
