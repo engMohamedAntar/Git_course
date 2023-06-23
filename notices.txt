@@ -43,3 +43,7 @@ git push -u remote_name branch_name  --> add the files to the remote repositry(t
 //EPISOD 10
 		"Pull Request"
 watch the full episod
+//EPISOD 11
+               "aliasing"
+git confit --global alias.st status  --> git status an alias called "st"
+git config --global alias.st -->show the original command of the alias "st"
