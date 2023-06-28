@@ -53,3 +53,4 @@ git config --global alias.st -->show the original command of the alias "st"
 //EPISOD 13
 git stash --> save the files that exist in the staging area into a stash
 git stash pop --> pop files from the stash
+git stash list --> show the stash lists that exists
