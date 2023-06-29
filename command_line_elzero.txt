@@ -1,0 +1,67 @@
+//EPISOD 3
+cd          --> is used to change directory
+md or mkdir -->is used to make a directory
+touch file.extention  --> create a new file in the determined location
+ls(linx) or dir(windows)   -->is used to show the directories that exest in the address
+clear or cls--> clear the screen
+..\  -->moves you a step back
+EX
+cd ..\    --> will move the direction one step back
+cd\  --> return to the base page
+--help -->explain some properties of the element 
+---------------------------------------------------------
+//EPISOD 4
+
+move  'folder1' newname  --> change the name of a file(windows)
+mv  'folder1'  newname  --> change the name of a file(linux)
+//Notice: if there is a another folder with the same name as the new name then foder1 will be moved into this folder
+move folder ..\ --> this folder will be moved one step back
+cp -r folder1 folder2  -->folder1 will be copied into folder two
+rm -r folder  or  rd folder -->will remove this folder(whether this folder is empty or not)
+rm -d folder  --> will remove this folder (Only if this folder is empty)
+rm file.extention  -->will remove this file 
+---------------------------------------------------------
+//EPISOD 5
+
+echo "Text content"> filename.extention   --> remove the old text and add a new text to the textfile 
+echo "Text content">> filename.extention  --> Add a  text to the textfile without removing the old text
+cat filename.extention --> show the content of the text file (you can even show the content of multible textfiles)
+cat file1 > file2  --> it is similler to cp but it works with text files (will copy the content of file1 into file2 & will remove the old content )
+cat file1 > file2  --> it is similler to cp but it works with text files (will copy the content of file1 into file2 & will keep the old content )
+//you can copy more than one file into one file
+EX:-
+cat name1.txt  name2.txt  name3.txt > allnames.txt 
+---------------------------------------------------------
+//EPISOD 6
+
+cat *  --> show the content of all the files in the determined folder
+grep "text" file.extention  --> will let you Know whether this text excest in this file(when searching in a text file we don't use -r)
+grep "text" -r  -->will search about the text in determined folder and the adjoining (aligned) files
+grep "text" -r folder1  --> will search about the text in all the files in folder1 (when searchig in a folder(directory) we use -r )
+grep "text" -r -l  --> will make a list of the files that contain this text
+----------------------------------------------------------
+//EPISOD 7
+
+file filename.extention --> show you the type of this file(regardless the extention)
+file *  -->show you the type of all the files inside the determined folder
+ctrl + C --> Ends any operation in the terminal
+property /?  --> Show you the manual of this property
+tree /a  -->Show you the full structure of you address
+osk  --> lets you use the keyboard using the mouse
+tasklist  --> Shows you all the opened programs and processes(show the names of the current processes)
+taskkill /IM "The process name" /F
+EX:-
+taskkill /IM chrome.exe /F --> will close the chrome (will kill this processes) //You will find names of the proceses using the task
+-----------------------------------------------------------
+EPISOD 8
+
+explorer file.extention  --> will open the file 
+alias os=osama  --> the alias name is os and the real folder is osama
+alias /?  -->give you the chance to delete an alias
+ipconfig  --> display your ip(some information about your Network)
+whoami  --> display your name
+systeminfo  --> display the computer properties
+ping website_name  --> will display the ping of the website
+ping website_name > file1.extention  --> will store the ping of the website into file1
+ipconfig | clip  --> will copy the ip into the windows clip_board(when you press 'ctrl + v' it will past the ip info)
+systeminfo | clip  --> will copy the system information into the windows clip_board(when you press 'ctrl + v' it will past the system information)
