@@ -45,12 +45,24 @@ git push -u remote_name branch_name  --> add the files to the remote repositry(t
 watch the full episod
 //EPISOD 11
                "aliasing"
-git confit --global alias.st status  --> git status an alias called "st"
+git config --global alias.st status  --> git status an alias called "st"
 git config --global alias.st -->show the original command of the alias "st"
 
 //EPISOD 12
+		   "Branching And Merging"
+git branch -->  show the current branch.
+git branch "branch_name"  -->creates a new branch
+git checkout "branch_name"  --> move to a branch
+git branch -d "branch_name"  --> deletes a branch if not edited(if it has any files and these files are commited then the branch will not be deleted unless the brach is merged with another one.
+git branch -D "branch_name"  --> deletes a branch
+git branch -b "branch_name"  --> creates a branch and moves to it.
+git merge "branch_name"  --> merges the branch with the current branch
+git branch -m "new branch_name"  --> renames the branch
+
 
 //EPISOD 13
+		  "Stashing"
 git stash --> save the files that exist in the staging area into a stash
 git stash pop --> pop files from the stash
 git stash list --> show the stash lists that exists
+git shash drop stash@{index_of_stash}
