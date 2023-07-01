@@ -59,7 +59,7 @@ git merge "branch_name"  --> merges the branch with the current branch
 git branch -m "new branch_name"  --> renames the branch
 
 
-//EPISOD 13
+//EPISOD 13,14
 		  "Stashing"
 git stash --> save the files that exist in the staging area into a stash.
 git stash save "a message describing the stash".
@@ -72,6 +72,20 @@ git shash drop stash@{index_of_stash}  --> Deletes the specified stash.
 git stash clear  --> Deletes all the stashes.
 git stash show  --> shows the files inside a stash .
 git stash show stash@{index_of_stash}.
+
+//Episod 15
+		"Restore And Clean"
+git restore --staged "file_name"  -->restore the file from the staging area
+git clean -n  -->show the files that will be removed by the "git clean -f" command.
+git clean -f  -->deletes all the untracked files in the local reop.
+//Episod 16
+git log  -->shows the commits (first commit is the head commit).
+git reset --hard "the hash of the commit that you want to make it the head"  -->change the head commit and remove the commits that are on top the head commit.
+
+//Episod 17
+		"Ignoring files and directories"
+touch .gitignore  --> create a file to add any files/directories you wanna ignore inside it.
+git add --force "file_name" --> add an ignored file to the staging area.
 
 
 
