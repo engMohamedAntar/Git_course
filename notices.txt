@@ -31,6 +31,7 @@ step three--> cat ~/'the name of the key file'
 step four--> copy the content of the file , go to git_hub , open the settings , choose 'SSH and GPG keys' , choose 'New SSH key' , past the content of the
 	     key and give it a title
 step five--> chek your key using this command  'ssh -T git@github.com' , then enter the key password
+
 //EPISOD 9
 		"Creating a repositry inside the command line"
 
@@ -40,9 +41,11 @@ git push commit -m "discription"  --> add the file to the local repo
 create a new repo on github
 git remote add origin git@github.com:aboantar852003@gmail.com/name_of_the_project.git(this is the 6th line in the repo page)
 git push -u remote_name branch_name  --> add the files to the remote repositry(this is the 7th line in the repo page)
+
 //EPISOD 10
 		"Pull Request"
 watch the full episod
+
 //EPISOD 11
                "aliasing"
 git config --global alias.st status  --> git status an alias called "st"
@@ -78,19 +81,30 @@ git stash show stash@{index_of_stash}.
 git restore --staged "file_name"  -->restore the file from the staging area
 git clean -n  -->show the files that will be removed by the "git clean -f" command.
 git clean -f  -->deletes all the untracked files in the local reop.
-//Episod 16
+
+
+//EPISOD 16
 git log  -->shows the commits (first commit is the head commit).
 git reset --hard "the hash of the commit that you want to make it the head"  -->change the head commit and remove the commits that are on top the head commit.
 
-//Episod 17
+//EPISOD 17
 		"Ignoring files and directories"
 touch .gitignore  --> create a file to add any files/directories you wanna ignore inside it.
 git add --force "file_name" --> add an ignored file to the staging area.
 
-
-
-
-
+//EPISOD 18
+		"Tagging And Releasing"
+-light weight tag: is a tag that takes its discreption from the commit message.
+	git tag "tag_name" -->create a light weight tag.
+	git push origin "tag_name"  -->pushes the tag to the rmote repo.
+-annotated tag: we write the tage description manually.
+	git tag -a "tag_name" -m "tag_discription"
+	git push origin "tag_name"  -->pushes the tag to the rmote repo.
+//EPISOD 19
+		"Tagging And Releasing part2"
+git tag -l "v1.*"  -->show all the versions of v1
+git tag -d "tag_name"  -->remove a tag locally.
+git push origin --delete "tag_name"  -->remove a tag remotly.
 
 
 
