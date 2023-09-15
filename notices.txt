@@ -23,6 +23,7 @@ git help config  --> will display the full configuration list
 git  config --global user.email  --> will display the your user.email
 git  config --global user.name "the name of the user"  --> will set the name of the users
 git config --global --unset user.name  --> will delete the value of user.name 
+git config --gobal --edit --> open the configration file
 //EPISOD 8
 		/*Creating a key*/
 step one--> ssh-keygen -t rsa -b 4096 -C "the email"
