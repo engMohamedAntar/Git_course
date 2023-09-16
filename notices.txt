@@ -15,7 +15,7 @@ git remote -v  -->display the remote name
 git push  remote_name  branch_name   -->move your file from the local repo to the remote repo
 //EPISOD 6
 
-git pull remote_ name  --> add all the new files that are on the remote repo to your local repo
+git pull remote_name  --> add all the new files that are on the remote repo to your local repo
 //EPISOD 7
 
 git config -l  --> will display the configuration list
