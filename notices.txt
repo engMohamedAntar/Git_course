@@ -108,6 +108,3 @@ git tag -l "v1.*"  -->show all the versions of v1
 git tag -d "tag_name"  -->remove a tag locally.
 git push origin --delete "tag_name"  -->remove a tag remotly.
 
-
-
-
