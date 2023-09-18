@@ -88,6 +88,7 @@ git clean -f  -->deletes all the untracked files in the local reop.
 //EPISOD 16
 git log  -->shows the commits (first commit is the head commit).
 git reset --hard "the hash of the commit that you want to make it the head"  -->change the head commit and remove the commits that are on top the head commit.
+git push origin master --force  --> Used after resetting the head commit.
 
 //EPISOD 17
 		"Ignoring files and directories"
